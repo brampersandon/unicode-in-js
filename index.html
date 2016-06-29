@@ -47,14 +47,15 @@
     <div class="slide-text">
       <h1 class="slide-title">Same great ASCII code points, <br>plus new, great-er Unicode code points!</h1>
       <pre><code class="javascript">
-        > a = String.fromCodePoint(160)
-        ' '
-        > b = String.fromCodePoint(32)
-        ' '
-        > a == b
-        false
-      </code></pre>
-    </div>
+        > antigua = '🇦🇬'
+        '🇦🇬'
+        > antigua.length
+        4
+        > antigua
+        '🇦🇬'
+        </code></pre>
+      <P class="smallify">Node.js version: <code>6.2.2</code></p>
+      </div>
   </div>
   <div class="slide blue" id="multiple-code-points">
     <div class="slide-text">
@@ -105,22 +106,23 @@
     <div class="slide-text">
       <h1 class="slide-title">Pitfall: String Replacement (Ruby!)</h1>
       <pre><code class="ruby">
-        > brandon = 'My name is Brandon'
-        'My name is Brandon.'
-        > charles = 'I am not' + String.fromCodePoint(160) + 'Charles!'
-        'I am not Charles!'
+       irb(main):001:0> brandon = 'My name is Brandon'
+       => "My name is Brandon"
+       irb(main):012:0> brandon.gsub(/\s/, '')
+       => "MynameisBrandon" 
 
-        > brandon.replace(/ /g, '')
-        'MynameisBrandon.'
-        > charles.replace(/ /g, '')
-        'Iamnot Charles!'
+       irb(main):009:0> charles = 'I am not' + ' '  + 'Charles!'                                                                   
+       => "I am not Charles!"
+       irb(main):011:0> charles.gsub(/\s/, '')
+       => "Iamnot Charles!" 
       </code></pre>
+      <P class="smallify">Ruby version: <code>ruby 2.3.1p112 (2016-04-26 revision 54768) [x86_64-darwin15]</code></p>
     </div>
   </div>
   <div class="slide" id="me">
     <div class="slide-text">
       <h1 class="slide-title">I'm Brandon, by the way.</h1>
-      <p>I work at a place called <a href="http://space150.com"><img class="ico" src="favicon.ico" /></a>.</p>
+      <p>I work at a place called <a href="http://space150.com"><img class="ico" src="favicon.gif" /></a>.</p>
       <p class="smallify"><em>Find me at <a href="https://brandon.mn">https://brandon.mn</a>, or as <a href="https://twitter.com/brandon_mn">@brandon_mn</a> most places.</p>
     </div>
   </div>
