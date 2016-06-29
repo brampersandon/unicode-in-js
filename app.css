@@ -1,0 +1,50 @@
+body {
+  font-family: "Signika Negative";
+  font-size: 30pt;
+}
+h1 {
+  font-family: "Crete Round";
+  font-style: italic;
+  font-size: 62pt;
+}
+h2 {
+  font-family: "Crete Round";
+  font-style: italic;
+}
+.slide {
+  width: 100%;
+  min-height: 100%;
+  display: block;
+}
+.slide.inverse {
+  background: #262626;
+  color: white;
+}
+.title .slide-title, .slide-text {
+  padding: 4em 1em;
+}
+.slide-text ul {
+  padding: 2em;
+}
+.slide.blue {
+  background-color: #00ccff;
+}
+.row {
+  padding-top: 2em;
+}
+.embiggen {
+  font-size: 120pt;
+}
+.smallify {
+  font-size: 25pt;
+}
+.ico {
+  width: 40px;
+}
+blockquote p {
+  padding: 80px;
+  color: #262626;
+}
+code {
+  font-size: 24pt;
+}
